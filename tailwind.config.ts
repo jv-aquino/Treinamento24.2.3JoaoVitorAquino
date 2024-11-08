@@ -9,8 +9,14 @@ export default {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        slate: {
+          1: "var(--slate-1)",
+          2: "var(--slate-2)",
+          3: "var(--slate-3)"
+        },
+        red: {
+          '500': 'hsla(358, 75%, 59%, 1)'
+        }
       },
     },
   },
