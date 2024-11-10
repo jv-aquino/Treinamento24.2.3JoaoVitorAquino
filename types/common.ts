@@ -18,3 +18,9 @@ export type Piu = {
   user: User,
   info: PiuInfo
 }
+
+export type New = {
+  titulo: string,
+  desc: string,
+  src: string,
+}

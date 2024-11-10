@@ -19,6 +19,8 @@
 
 .text-body {
   font-size: 14px;
+  letter-spacing: 0.5px;
+  font-weight: 400;
 }
 .text-subtitle {
   font-size: 18px;
