@@ -2,9 +2,11 @@ import { Piu } from "@/types/common";
 
 export const basePius: Piu[] = [
   {
+    id: 1,
     conteudo: 'NÃO há imoralidade em furar a fila do bandejão quem não defende é porque não tem amigos',
     createdAt: new Date('December 1, 2023'),
     user: {
+      id: 2,
       nome: 'Pedro Souza',
       profileUrl: 'pebaiano.png',
       piusername: 'pebaiano'
@@ -16,9 +18,11 @@ export const basePius: Piu[] = [
     }
   },
   {
+    id: 2,
     conteudo: 'Oiiiiiii (Intenção de furar a fila do bandejão)',
     createdAt: new Date('January 1, 2024'),
     user: {
+      id: 3,
       nome: 'Anna Karoline',
       profileUrl: 'anna.png',
       piusername: 'nnakarol'
@@ -30,9 +34,11 @@ export const basePius: Piu[] = [
     }
   },
   {
+    id: 3,
     conteudo: '3,14159265358979323846164338327950288419726939937510582097494459230781640628620899862803482534211706798214808651',
     createdAt: new Date('February 1, 2023'),
     user: {
+      id: 4,
       nome: 'Arthur Maia',
       profileUrl: 'arthur.png',
       piusername: 'Ntutsdoscrias'

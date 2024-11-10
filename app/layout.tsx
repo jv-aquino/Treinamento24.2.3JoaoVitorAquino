@@ -10,8 +10,8 @@ const nunito = Nunito({
 
 // tags <meta> e muito mais do que viria numa <head>
 export const metadata: Metadata = {
-  title: "Front Template",
-  description: "Template",
+  title: "PiuPiwer",
+  description: "Envie e leia pius!",
 };
 
 export default function RootLayout({

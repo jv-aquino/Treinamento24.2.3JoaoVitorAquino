@@ -1,4 +1,5 @@
 export type User = {
+  id: number,
   nome: string,
   profileUrl: string,
   piusername: string,
@@ -11,9 +12,9 @@ export type PiuInfo = {
 }
 
 export type Piu = {
+  id: number,
   conteudo: string,
   createdAt: Date,
-  isUserAtual: boolean | undefined,
   user: User,
   info: PiuInfo
 }
