@@ -37,7 +37,7 @@ function PiuComponent({ piu, isFromUser, setPius }: PiuComponentProps) {
         </button>
       </div>
 
-      <p>{piu.conteudo}</p>
+      <p className="break-words">{piu.conteudo}</p>
       
       <PiuInfos info={piu.info} />
     </div>

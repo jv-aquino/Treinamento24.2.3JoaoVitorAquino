@@ -1,4 +1,4 @@
-import { PiuInfo } from "@/types/common";
+import type { PiuInfo } from "@/types/common";
 
 import Rts from '@/public/assets/icons/rts.svg'
 import Comentarios from '@/public/assets/icons/comentarios.svg'

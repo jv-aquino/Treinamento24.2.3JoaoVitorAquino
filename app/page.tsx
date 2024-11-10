@@ -5,7 +5,7 @@ import News from "@/components/News/News";
 export default function Home() {
   return (
     <>
-      <div className="container relative flex">
+      <div className="max-w-full relative flex">
         <SideBar />
         
         <MainFeed />

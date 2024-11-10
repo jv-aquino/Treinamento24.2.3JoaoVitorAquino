@@ -1,4 +1,4 @@
-import { Piu } from "@/types/common";
+import type { Piu } from "@/types/common";
 import PiuComponent from "../PiuComponent";
 import { v4 as uuidv4 } from 'uuid';
 

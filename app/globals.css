@@ -5,7 +5,17 @@
 
 body {
   font-family: "Nunito", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  
   @apply bg-slate-1 text-slate-12;
+}
+.no-scrollbar::-webkit-scrollbar {
+  display: none; /* Google / Safari */
+}
+.no-scrollbar {
+  scrollbar-width: none; /* Firefox */
 }
 
 .PiuInfo__button {
