@@ -4,7 +4,8 @@ import { Nunito } from 'next/font/google'
 import type { Metadata } from "next";
 
 const nunito = Nunito({
-  weight: ['500', '600', '700']
+  weight: ['500', '600', '700'],
+  subsets: ['latin']
 })
 
 // tags <meta> e muito mais do que viria numa <head>

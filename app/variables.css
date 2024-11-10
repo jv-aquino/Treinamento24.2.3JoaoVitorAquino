@@ -1,0 +1,38 @@
+:root {
+  --slate-1: hsl(210, 33%, 99%);
+  --slate-2: hsl(210, 17%, 98%);
+  --slate-3: hsl(210, 17%, 95%);
+  --slate-8: hsl(205, 11%, 78%);
+  --slate-12: hsl(202, 24%, 9%);
+  --indigo-9: hsl(226, 70%, 55%);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --slate-1: hsl(200, 7%, 9%);
+    --slate-2: hsl(195, 7%, 11%);
+    --slate-3: hsl(192, 7%, 14%);
+    --slate-8: hsl(207, 6%, 32%);
+    --slate-12: hsl(210, 6%, 93%);
+  }
+}
+
+.text-body {
+  font-size: 14px;
+}
+.text-subtitle {
+  font-size: 18px;
+}
+.text-headline {
+  font-size: 28px;
+}
+.text-titleNormal {
+  font-size: 64px;
+}
+.text-titleBig {
+  font-size: 96px;
+}
+
+.bg-blueGradient {
+  background: linear-gradient(90deg, hsla(202, 82%, 56%, 1), hsla(210, 100%, 30%, 1));
+}

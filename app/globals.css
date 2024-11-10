@@ -1,21 +1,27 @@
+@import url('./variables.css');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Nunito", sans-serif;
+  @apply bg-slate-1 text-slate-12;
+}
+
+.PiuInfo__button {
+  @apply flex gap-2 items-center justify-center;
+}
+.PiuInfo__buttonIcon {
+  width: 24px;
+  height: 24px;
+  transition: color .4s;
+
+  @apply text-white;
+}
+.PiuInfo__buttonIcon:hover {
+  color: hsl(225, 78%, 82%);
+
+}
+.PiuInfo__buttonIcon.marked {
+  @apply text-indigo-9;
 }

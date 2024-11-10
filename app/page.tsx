@@ -1,13 +1,17 @@
 import SideBar from "@/components/SideBar/SideBar";
+import MainFeed from "@/components/MainFeed/MainFeed";
+import News from "@/components/News/News";
 
 export default function Home() {
   return (
     <>
-      <SideBar />
-      <main>
+      <div className="container relative flex">
+        <SideBar />
+        
+        <MainFeed />
 
-      </main>
-      
+        <News />
+      </div>
     </>
   );
 }
