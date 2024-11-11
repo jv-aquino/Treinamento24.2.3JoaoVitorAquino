@@ -21,8 +21,8 @@ function CreatePiu({ setPius }: CreatePiuProps) {
   };
 
   return (
-    <form onSubmit={handleCreatePiu} className='h-min'>
-      <div className="CreatePiu__wrap h-min">
+    <form onSubmit={handleCreatePiu} className='h-[138px]'>
+      <div className="CreatePiu__wrap h-[138px]">
         <textarea
           className={`CreatePiu__textarea no-scrollbar ${piu.length >= 140 ? 'maxLen' : ''}`}
           name="criarPiu"
@@ -31,8 +31,15 @@ function CreatePiu({ setPius }: CreatePiuProps) {
           onChange={e => setPiu(e.target.value)}
         />
         <Image src="/assets/icons/leftIcons.svg" alt='' width={132} height={20} 
-          className='absolute bottom-4 left-4' />
+          className='CreatePiu__icons absolute bottom-4 left-4 z-10' />
 
+        <p className={`CreatePiu__contador absolute bottom-4 left-[55%] lg:left-1/2 ${piu.length >= 140 ? 'maxLen' : ''}`}>
+          {piu.length}/140
+          <span
+            className={`absolute left-0 bottom-[-2px] h-[3px] transition-all ${piu.length >= 140 ? 'bg-red-400' : 'bg-indigo-9'}`}
+            style={{ width: `${Math.min((piu.length / 140) * 100, 100)}%` }}
+          ></span>
+        </p>
 
         <button type="submit" className='absolute bottom-4 right-4'>
           <Image src="/assets/icons/sendIcon.svg" alt="Enviar Piu" width={20} height={20} />

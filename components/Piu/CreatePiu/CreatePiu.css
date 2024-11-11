@@ -12,6 +12,16 @@
   font-size: 16px;
   @apply text-slate-12;
 }
-.CreatePiu__textarea.maxLen {
+.CreatePiu__textarea.maxLen,
+.CreatePiu__contador.maxLen {
   @apply text-red-400;
+}
+
+@media screen and (max-width: 380px) {
+  .CreatePiu__icons {
+    display: none;
+  }
+  .CreatePiu__contador {
+    left: 10% !important;
+  }
 }

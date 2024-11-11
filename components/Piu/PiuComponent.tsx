@@ -29,7 +29,7 @@ function PiuComponent({ piu, isFromUser, setPius }: PiuComponentProps) {
         </div>
 
         <button 
-          className={'absolute top-6 right-6 ' + (isFromUser ? 'block' : 'hidden')} 
+          className={'absolute top-4 right-4 lg:top-6 lg:right-6 ' + (isFromUser ? 'block' : 'hidden')} 
           type="button"
           onClick={() => setPius(prev => prev.filter(outroPiu => outroPiu.id !== piu.id))}
         >
