@@ -1,0 +1,26 @@
+.SearchPiu__wrap {
+  position: relative;
+}
+.SearchPiu__input {
+  width: 100%;
+  padding: 8px;
+  border-radius: 8px;
+  @apply bg-slate-8;
+}
+.SearchPiu__input::placeholder {
+  @apply text-slate-12;
+}
+.SearchPiu__wrap::after {
+  content: '';
+  position: absolute;
+  top: 8px;
+  right: 8px;
+
+  width: 24px;
+  height: 24px;
+
+  background-image: url('/assets/icons/search.svg'); /* Coloque o caminho do seu ícone aqui */
+  background-size: cover;
+  background-repeat: no-repeat;
+  pointer-events: none;
+}
