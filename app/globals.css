@@ -37,14 +37,19 @@ body {
 }
 
 .SideBar__nav li {
+  width: 92%;
+  border-top-right-radius: 999px;
+  border-bottom-right-radius: 999px;
+
+  transition: background-color .4s;
+}
+.SideBar__nav button {
+  width: 100%;
   display: flex;
   align-items: center;
   gap: 10px;
 
-  width: 92%;
   padding: 12px;
-  border-top-right-radius: 999px;
-  border-bottom-right-radius: 999px;
 }
 .SideBar__nav li.selected {
   @apply bg-indigo-9;

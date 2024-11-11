@@ -1,3 +1,9 @@
+export type NavItem = {
+  id: number,
+  conteudo: string,
+  src: string,
+}
+
 export type User = {
   id: number,
   nome: string,
