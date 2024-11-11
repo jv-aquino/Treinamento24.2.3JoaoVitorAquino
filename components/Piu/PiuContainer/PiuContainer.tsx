@@ -10,7 +10,7 @@ interface PiuContainerProps {
 
 function PiuContainer({ pius, setPius, userId }: PiuContainerProps) {
   return ( 
-    <div className="flex flex-col gap-[46px]">
+    <div className="flex flex-col gap-[32px]">
       {pius.map(piu => {
         return <PiuComponent piu={piu} setPius={setPius} isFromUser={piu.user.id === userId} key={uuidv4()} />
       })}

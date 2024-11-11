@@ -17,6 +17,9 @@ body {
 .no-scrollbar {
   scrollbar-width: none; /* Firefox */
 }
+:focus {
+  @apply outline-indigo-9;
+}
 
 .PiuInfo__button {
   @apply flex gap-2 items-center justify-center;
