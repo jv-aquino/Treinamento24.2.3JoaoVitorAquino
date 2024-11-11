@@ -6,13 +6,13 @@ interface SearchPiuProps {
 }
 
 function SearchPiu({ searchTerm, setSearchTerm }: SearchPiuProps) {
-  return ( 
-    <form className="SearchPiu">
+  return (
+    <form onSubmit={e => e.preventDefault()} className="SearchPiu">
       <div className="SearchPiu__wrap">
         <input
           className="SearchPiu__input"
           type="text"
-          name="piu"
+          name="procurarPiu"
           placeholder="Ouvir um piu..."
           value={searchTerm}
           onChange={(e) => setSearchTerm(e.target.value)}

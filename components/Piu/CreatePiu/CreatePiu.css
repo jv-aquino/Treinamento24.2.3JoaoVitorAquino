@@ -1,0 +1,17 @@
+.CreatePiu__wrap {
+  position: relative;
+}
+.CreatePiu__textarea {
+  width: 100%;
+  padding: 16px 16px 80px;
+  border-radius: 8px;
+  resize: none;
+  @apply bg-slate-8;
+}
+.CreatePiu__textarea::placeholder {
+  font-size: 16px;
+  @apply text-slate-12;
+}
+.CreatePiu__textarea.maxLen {
+  @apply text-red-400;
+}
