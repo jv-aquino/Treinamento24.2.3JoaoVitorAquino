@@ -11,7 +11,7 @@ function SideBar() {
 
   return ( 
     <>
-      <div className={"SideBar w-full lg:w-[310px] h-screen flex-shrink-0 z-10 fixed bg-slate-1 lg:sticky top-0 " + (open ? 'show' : '')}>
+      <div className={"SideBar w-full lg:w-[310px] h-screen flex-shrink-0 z-30 fixed bg-slate-1 lg:sticky top-0 " + (open ? 'show' : '')}>
         <Image src='/assets/images/logo.svg' alt="PiuPiuwer" width={226} height={40} className="pt-8 pb-8 mx-auto" />
         <nav className="SideBar__nav">
           <ul className="flex flex-col gap-2">
@@ -36,7 +36,7 @@ function SideBar() {
         </div>
       </div>
       
-      <button type="button" className="lg:hidden fixed top-3 right-3 z-20 rounded w-6 h-6 bg-indigo-9 
+      <button type="button" className="lg:hidden fixed top-3 right-3 z-30 rounded w-6 h-6 bg-indigo-9 
       flex justify-center items-center" 
       onClick={() => {
         return setOpen(prev => !prev)
