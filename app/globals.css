@@ -21,24 +21,6 @@ body {
   @apply outline-indigo-9;
 }
 
-.PiuInfo__button {
-  @apply flex gap-2 items-center justify-center;
-}
-.PiuInfo__buttonIcon {
-  width: 24px;
-  height: 24px;
-  transition: color .4s;
-
-  @apply text-white;
-}
-.PiuInfo__buttonIcon:hover {
-  color: hsl(225, 78%, 82%);
-
-}
-.PiuInfo__buttonIcon.marked {
-  @apply text-indigo-9;
-}
-
 .SideBar__nav li {
   width: 92%;
   border-top-right-radius: 999px;

@@ -1,6 +1,6 @@
 import { Piu } from "@/types/common";
 import Image from "next/image";
-import PiuInfos from "./PiuInfos";
+import PiuInfos from "./PiuInfos/PiuInfos";
 
 interface PiuComponentProps {
   piu: Piu;
