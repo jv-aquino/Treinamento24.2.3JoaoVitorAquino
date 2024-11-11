@@ -35,3 +35,17 @@ body {
 .PiuInfo__buttonIcon.marked {
   @apply text-indigo-9;
 }
+
+.SideBar__nav li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  width: 92%;
+  padding: 12px;
+  border-top-right-radius: 999px;
+  border-bottom-right-radius: 999px;
+}
+.SideBar__nav li.selected {
+  @apply bg-indigo-9;
+}
