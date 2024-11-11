@@ -13,27 +13,26 @@ function CreatePiu({ setPius }: CreatePiuProps) {
 
   const handleCreatePiu = (e: React.FormEvent) => {
     e.preventDefault();
-    if (piu.length > 140) return;
+    if (piu.length > 140 || piu.length <= 0) return;
 
-    // Crie um novo array ao invés de mutar o existente
     setPius(prev => [createPiu(prev.length, piu), ...prev]);
 
     setPiu('');
   };
 
   return (
-    <form onSubmit={handleCreatePiu}>
-      <div className="CreatePiu__wrap">
+    <form onSubmit={handleCreatePiu} className='h-min'>
+      <div className="CreatePiu__wrap h-min">
         <textarea
           className={`CreatePiu__textarea no-scrollbar ${piu.length >= 140 ? 'maxLen' : ''}`}
           name="criarPiu"
           placeholder="Quero dar um piu..."
-          maxLength={140}
           value={piu}
           onChange={e => setPiu(e.target.value)}
         />
         <Image src="/assets/icons/leftIcons.svg" alt='' width={132} height={20} 
           className='absolute bottom-4 left-4' />
+
 
         <button type="submit" className='absolute bottom-4 right-4'>
           <Image src="/assets/icons/sendIcon.svg" alt="Enviar Piu" width={20} height={20} />

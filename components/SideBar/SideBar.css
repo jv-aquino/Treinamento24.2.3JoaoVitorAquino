@@ -1,0 +1,9 @@
+@media screen and (max-width:1024px) {
+  .SideBar {
+    transform: translateX(-100%);
+    transition: transform .5s;
+  }
+  .SideBar.show {
+    transform: translateX(0%);
+  }
+}

@@ -10,7 +10,7 @@ interface PiuComponentProps {
 
 function PiuComponent({ piu, isFromUser, setPius }: PiuComponentProps) {
   return ( 
-    <div className="flex flex-col gap-[30px] bg-slate-3 rounded-2xl p-6 relative">
+    <div className="flex flex-col gap-[30px] bg-slate-3 rounded-2xl p-4 lg:p-6 relative">
       <div className="flex gap-2 items-center">
         <div className="flex items-center justify-center w-24 h-24 rounded-[48px] bg-blueGradient">
           <div className="flex items-center justify-center bg-slate-3 w-[88px] h-[88px] rounded-[48px]">

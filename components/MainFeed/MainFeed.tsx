@@ -19,7 +19,6 @@ function MainFeed() {
     }
   };
 
-  // Filtra os pius com base no termo de pesquisa
   useEffect(() => {
     setFilteredPius(
       pius.filter(piu =>
@@ -43,7 +42,7 @@ function MainFeed() {
 
       <button
         onClick={scrollToTop}
-        className="fixed bottom-4 right-1/2 text-white p-1 rounded shadow-md bg-slate-1 hover:bg-indigo-9 transition"
+        className="fixed bottom-4 right-1/2 translate-x-1/2 text-white p-1 rounded bg-slate-1 hover:bg-indigo-9 transition"
       >
         ⬆️
       </button>
