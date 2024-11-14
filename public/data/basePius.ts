@@ -2,7 +2,7 @@ import { Piu } from "@/types/common";
 
 export const basePius: Piu[] = [
   {
-    id: 1,
+    id: 0,
     conteudo: 'NÃO há imoralidade em furar a fila do bandejão quem não defende é porque não tem amigos',
     createdAt: new Date('December 1, 2023'),
     user: {
@@ -18,7 +18,7 @@ export const basePius: Piu[] = [
     }
   },
   {
-    id: 2,
+    id: 1,
     conteudo: 'Oiiiiiii (Intenção de furar a fila do bandejão)',
     createdAt: new Date('January 1, 2024'),
     user: {
@@ -34,7 +34,7 @@ export const basePius: Piu[] = [
     }
   },
   {
-    id: 3,
+    id: 2,
     conteudo: '3,14159265358979323846164338327950288419726939937510582097494459230781640628620899862803482534211706798214808651',
     createdAt: new Date('February 1, 2023'),
     user: {
